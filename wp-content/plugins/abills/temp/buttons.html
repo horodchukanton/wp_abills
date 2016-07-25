@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Buttons</h1>
+
+
+<ul class="square-btn-container">
+    <li>
+        <div class='square-btn'>
+            <span class="square-btn-title">Button1</span>
+            <br/>
+            <div class="description-container">
+                <span class="square-btn-description">Description</span>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class='square-btn'>
+            <span class="square-btn-title">Button2</span>
+            <br/>
+            <div class="description-container">
+                <span class="square-btn-description">Description</span>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class='square-btn'>
+            <span class="square-btn-title">Button3</span>
+            <br/>
+            <div class="description-container">
+                <span class="square-btn-description">Description</span>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class='square-btn'>
+            <span class="square-btn-title">Button4</span>
+            <br/>
+            <div class="description-container">
+                <span class="square-btn-description">Description</span>
+            </div>
+        </div>
+    </li>
+</ul>
+
+<style>
+
+    ul.square-btn-container {
+        list-style: none;
+
+    }
+
+    li > div.square-btn {
+        background-color: #00cae0;
+        width: 150px;
+        height: 150px;
+
+        margin: 10px;
+        padding: 20px;
+
+        display: inline-block;
+
+        -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+        transition: width 2s, height 2s, background-color 2s, transform 2s;
+
+    }
+
+    li > div.square-btn:hover > .description-container {
+        padding-top: 0;
+        /*display : block;*/
+    }
+
+    li > div.square-btn > .description-container {
+        padding-top: 150px;
+        /*display : none;*/
+    }
+
+</style>
+
+</body>
+</html>

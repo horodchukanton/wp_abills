@@ -1,0 +1,126 @@
+div.page-header-top-right > .row > div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*.no-col-padding > div{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}*/
+
+.page-header-top-right {
+    margin-top: 0;
+}
+
+/**
+* Phones widget CSS
+*/
+
+.widget.phones_widget{
+    height: 100%;
+}
+
+
+.phones_widget .btn {
+    height: 100%;
+    width: 100%;
+    max-height: 75px;
+    min-height: 75px;
+    padding: 0 10px;
+}
+
+.phones_widget .btn:hover{
+    overflow-y: auto;
+    max-height: 85px;
+    min-height: 85px;
+    height: 110%;
+}
+
+.phones_widget h5 {
+    font-weight: 700;
+    font-size: 130%;
+}
+
+.widget.phones_widget a {
+    padding: 0;
+}
+
+
+
+/**
+*  Square buttons
+*/
+.btn-sq-lg {
+    width: 150px !important;
+    height: 150px !important;
+}
+
+.btn-sq {
+    width: 100px !important;
+    height: 100px !important;
+    font-size: 10px;
+}
+
+.btn-sq-sm {
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 10px;
+}
+
+.btn-sq-xs {
+    width: 25px !important;
+    height: 25px !important;
+    padding:2px;
+}
+
+
+/**
+* Button widget CSS
+*/
+.widget.Abills_button_widget {
+    height: 100%;
+}
+
+.widget .header-button > a {
+    width: 100%;
+    font-size: 160%;
+    min-height: 75px;
+    max-height: 75px;
+}
+
+.widget .header-button > a > span{
+  line-height: 50px;
+}
+
+
+/**
+* Custom classes
+*/
+
+.btn-flat {
+    border-radius: 0;
+}
+
+.panel-info-card {
+  min-height: 117px;
+}
+
+/* Hides input type number spinner */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+article.post {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    background-color: #fff;
+}
+
+div.banner-row {
+    margin-bottom: 10px;
+}
+

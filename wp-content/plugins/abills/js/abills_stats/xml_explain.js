@@ -1,0 +1,21 @@
+document['xml_mappings'] = {
+  'Name'          : 'FIO',
+  'Login'         : 'LOGIN',
+  'User ID'       : 'UID',
+  'Address'       : 'ADDRESS_STREET|ADDRESS_BUILD|ADDRESS_FLAT',
+  'Cash'          : 'DEPOSIT',
+  'Last payment'  : 'PAYMENT_SUM|PAYMENT_DATE',
+  'Credit'        : 'CREDIT',
+  'Credit expire' : 'CREDIT_DATE',
+  'Reduction'     : 'REDUCTION',
+  'Reduction date': 'REDUCTION_DATE',
+  'Contract'      : 'CONTRACT_ID',
+  'Phone'         : 'PHONE',
+  'E-Mail'        : 'EMAIL',
+  'IP'            : 'IP',
+  'Plan'          : 'TP_NAME',
+  'State'         : 'STATE',
+  'Expire date'   : 'SERVICE_EXPIRE_DATE',
+  'Server time'   : 'DATE|TIME',
+  'Message'       : 'NEXT_FEES_WARNING'
+};

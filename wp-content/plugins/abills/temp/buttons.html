@@ -3,6 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <style>
+
+
+        ul.square-btn-container {
+            list-style: none;
+
+        }
+
+        ul > li {
+            display: inline-block;
+            float: left;
+        }
+
+
+        li > div.square-btn {
+
+            background-color: #00cae0;
+            width: 100px;
+            height: 100px;
+
+            margin: 10px;
+            padding: 20px;
+        }
+
+        li > div.square-btn .description-container {
+            padding-top: 100px;
+
+            -webkit-transition: padding 1s;
+            transition: padding 1s;
+        }
+
+        li > div.square-btn:hover div.description-container {
+            padding-top: 0;
+            -webkit-transform: translateY(-150);
+            transform: translateY(-150);
+        }
+
+    </style>
 </head>
 <body>
 
@@ -48,39 +87,6 @@
     </li>
 </ul>
 
-<style>
-
-    ul.square-btn-container {
-        list-style: none;
-
-    }
-
-    li > div.square-btn {
-        background-color: #00cae0;
-        width: 150px;
-        height: 150px;
-
-        margin: 10px;
-        padding: 20px;
-
-        display: inline-block;
-
-        -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
-        transition: width 2s, height 2s, background-color 2s, transform 2s;
-
-    }
-
-    li > div.square-btn:hover > .description-container {
-        padding-top: 0;
-        /*display : block;*/
-    }
-
-    li > div.square-btn > .description-container {
-        padding-top: 150px;
-        /*display : none;*/
-    }
-
-</style>
 
 </body>
 </html>

@@ -58,7 +58,7 @@
     </div>
   </div>
   <div class="col-md-3">
-    <div class="panel panel-info">
+    <div class="panel panel-primary">
       <div class="panel-heading panel-info-card">
         <div class="row" id="request_call_wrapper">
           <form class='form form-horizontal' id='request_call_form'>

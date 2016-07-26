@@ -7,3 +7,13 @@ Author URI:     http://abills.net.ua
 Template:       bootstrap-basic
 Version:        0.1.0
 */
+
+
+div.container.page-container {
+    padding-top: 60px;
+}
+
+.navbar.navbar-fixed-top {
+    padding-left : 100px;
+    padding-right : 100px;
+}

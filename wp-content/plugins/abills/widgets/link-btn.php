@@ -47,7 +47,7 @@ class Link_button_widget extends WP_Widget
         }
 
         $col_md_size = '2';
-        $col_xs_size = '6';
+        $col_xs_size = '3';
 
         if (!empty($icon)) {
             $icon_text = "<span class='$icon' aria-hidden='true'></span>";
@@ -72,7 +72,7 @@ class Link_button_widget extends WP_Widget
 
             $before_button = "<div class='header-button'>";
 
-            $button = "<a href='$link' class='btn btn-$color btn-lg btn-flat' target='_blank' data-toggle='popover' data-content='$btn_tooltip' data-html=true data-trigger='hover' data-placement='bottom'>$icon_text </a>";
+            $button = "<a href='$link' class='btn btn-$color btn-sq-lg' target='_blank' data-toggle='popover' data-content='$btn_tooltip' data-html=true data-trigger='hover' data-placement='bottom'>$icon_text </a>";
 
             $after_button = "</div>";
 

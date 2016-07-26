@@ -21,7 +21,7 @@
 						?> 
 					</div>
 					<div class="col-md-6 footer-right text-right">
-						<?php dynamic_sidebar('footer-right'); ?> 
+						<?php dynamic_sidebar('footer-right'); ?>
 					</div>
 				</div>
 			</footer>

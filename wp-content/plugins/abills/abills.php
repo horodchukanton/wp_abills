@@ -29,6 +29,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 include 'widgets/phones.php';
 include 'widgets/link-btn.php';
 include 'widgets/abills_stats.php';
+include 'widgets/registration.php';
 include 'cards.php';
 
 
@@ -285,6 +286,7 @@ add_action('widgets_init', function () {
   register_widget('Phones_Widget');
   register_widget('Link_button_widget');
   register_widget('Abills_stats_widget');
+  register_widget('Abills_registration_widget');
 });
 
 /* Modify head */

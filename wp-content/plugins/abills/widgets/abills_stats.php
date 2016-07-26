@@ -63,7 +63,7 @@ ABILLS_STATS;
     global $before_widget;
     global $after_widget;
 
-    echo $before_widget;
+    #echo $before_widget;
 
 
     ?>
@@ -103,7 +103,7 @@ ABILLS_STATS;
 
     </div>
     <?php
-    echo $after_widget;
+    #echo $after_widget;
   }
 
 

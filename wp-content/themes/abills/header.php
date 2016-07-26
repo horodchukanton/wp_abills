@@ -84,6 +84,7 @@
   <div id="content" class="row row-with-vspace site-content">
 
     <!-- Function for BANER -->
+    <hr/>
     <div class="row banner-row">
       <?php
       abills_gallery();

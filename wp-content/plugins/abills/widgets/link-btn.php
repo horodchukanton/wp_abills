@@ -72,7 +72,7 @@ class Link_button_widget extends WP_Widget
 
             $before_button = "<div class='header-button'>";
 
-            $button = "<a href='$link' class='btn btn-$color btn-sq-lg' target='_blank' data-toggle='popover' data-content='$btn_tooltip' data-html=true data-trigger='hover' data-placement='bottom'>$icon_text </a>";
+            $button = "<a href='$link' class='btn btn-$color btn-flat' target='_blank' data-toggle='popover' data-content='$btn_tooltip' data-html=true data-trigger='hover' data-placement='bottom'>$icon_text </a>";
 
             $after_button = "</div>";
 

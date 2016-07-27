@@ -13,9 +13,21 @@ function ContactsRow(id) {
     var self = this;
     var $self = $('#' + id);
 
+    var $self_btn = $self.find('a');
+
     this.opened = false;
     this.id = id;
 
+    $self.hover(
+        function () {
+          $self_btn.removeClass('btn-info');
+          $self_btn.addClass('btn-primary');
+        },
+        function () {
+          $self_btn.removeClass('btn-primary');
+          $self_btn.addClass('btn-info');
+        }
+    );
 
     $self.on('click', function () {
         (!self.opened) ? self.showContacts() : self.hideContacts();
@@ -65,7 +77,7 @@ $(function () {
                 }
             })
             .fail(
-                function(){
+                function () {
                     console.log('fail');
                 }
             );
@@ -86,9 +98,9 @@ $(function () {
     $('[data-toggle="popover"]').popover();
 
     //If adminrow showed need to add additional padding to top
-    if ($('#wpadminbar').length > 0){
+    if ($('#wpadminbar').length > 0) {
         var height = $('#wpadminbar').css('height');
         // $('body').css({'padding-top' : height});
-        $('.navbar.navbar-fixed-top').css({top : height});
+        $('.navbar.navbar-fixed-top').css({top: height});
     }
 });

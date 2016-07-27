@@ -6,24 +6,23 @@
     height: 100%;
 }
 
+.phones_widget .header-phones a {
+    padding-top: 0;
+}
 
 .phones_widget .btn {
     height: 100%;
     width: 100%;
-    max-height: 100px;
-    min-height: 100px;
-    padding: 0 10px;
-
-    -webkit-transition: height 2s;
-    transition: height 2s;
+    max-height: 70px;
+    min-height: 70px;
 }
 
-.phones_widget .btn:hover{
-    max-height: 105px;
-    min-height: 105px;
-
-    -webkit-transition: height 2s;
-    transition: height 2s;
+.phones_widget a {
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -ms-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s;
 }
 
 .phones_widget h5 {
@@ -31,41 +30,9 @@
     font-size: 130%;
 }
 
-.widget.phones_widget > div > a {
-    padding-top: 3%;
-}
-
 #abills-contacts_row {
     margin-top: 30px;
 }
-
-
-/**
-*  Square buttons
-*/
-.btn-sq-lg {
-    width: 150px !important;
-    height: 150px !important;
-}
-
-.btn-sq {
-    width: 100px !important;
-    height: 100px !important;
-    font-size: 10px;
-}
-
-.btn-sq-sm {
-    width: 50px !important;
-    height: 50px !important;
-    font-size: 10px;
-}
-
-.btn-sq-xs {
-    width: 25px !important;
-    height: 25px !important;
-    padding:2px;
-}
-
 
 /**
 * Button widget CSS
@@ -77,12 +44,12 @@
 .widget .header-button > a {
     width: 100%;
     font-size: 160%;
-    min-height: 100px;
-    max-height: 100px;
+    min-height: 70px;
+    max-height: 70px;
 }
 
 .widget .header-button > a > span{
-  line-height: 85px;
+  line-height: 60px;
 }
 
 

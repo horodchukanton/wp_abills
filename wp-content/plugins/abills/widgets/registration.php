@@ -36,7 +36,7 @@ class Abills_registration_widget extends WP_Widget
       global $after_widget;
 
       extract($args);
-
+      echo $before_widget;
       echo "<form method='POST' action='/registration'>
       <div class='panel panel-info'>
             <div class='panel-heading text-center'>Заявка на регистрацию</div>
@@ -64,6 +64,7 @@ class Abills_registration_widget extends WP_Widget
             </div>
             </form>
       ";
+      echo $after_widget;
     }
 
 

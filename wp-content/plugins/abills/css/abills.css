@@ -2,7 +2,7 @@
 * Phones widget CSS
 */
 
-.widget.phones_widget{
+.widget.phones_widget {
     height: 100%;
 }
 
@@ -35,25 +35,6 @@
 }
 
 /**
-* Button widget CSS
-*/
-.widget.Abills_button_widget {
-    height: 100%;
-}
-
-.widget .header-button > a {
-    width: 100%;
-    font-size: 160%;
-    min-height: 70px;
-    max-height: 70px;
-}
-
-.widget .header-button > a > span{
-  line-height: 60px;
-}
-
-
-/**
 * Custom classes
 */
 
@@ -62,7 +43,7 @@
 }
 
 .panel-info-card {
-  min-height: 117px;
+    min-height: 117px;
 }
 
 /* Hides input type number spinner */
@@ -77,10 +58,55 @@ article.post {
     -moz-border-radius: 5px;
     border-radius: 5px;
 
-    background-color: #fff;
+    /*background-color: #fff;*/
 }
 
 div.banner-row {
     margin-bottom: 10px;
 }
 
+/**
+* Button widget CSS
+*/
+
+.widget.Abills_button_widget a {
+    height: 100%;
+    width: 100%;
+}
+
+/**
+*  Hover text buttons
+*/
+.header-button span {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.header-button, .header-button-title {
+    transition: 0.3s;
+}
+
+.header-button {
+    /*font: normal normal 700 1em/4em Arial,sans-serif;*/
+    overflow: hidden;
+    width: 100%;
+    /*background-color: #3b5998;*/
+
+    min-height: 70px;
+    max-height: 70px;
+}
+
+.header-button-title {
+    margin-top: 1em;
+    font-size: 200%;
+}
+
+.header-button:hover .header-button-title {
+    margin-top: 0;
+}
+
+div.header-button-text {
+    margin-top : 1em;
+}

@@ -53,6 +53,8 @@ function ContactsRow(id) {
 
 $(function () {
 
+    $('.Abills_button_widget>a').css({'max-height' : $('.phones_widget').css('height')});
+
     $.each($('.phones_widget'), function (i, e) {
         phonesWidgets.push(new ContactsRow(e.id));
     });
@@ -103,4 +105,6 @@ $(function () {
         // $('body').css({'padding-top' : height});
         $('.navbar.navbar-fixed-top').css({top: height});
     }
+
+
 });

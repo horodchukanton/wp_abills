@@ -33,7 +33,7 @@
 
 <div class="row main-navigation">
   <div class="col-md-8 col-md-offset-2">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse"
                 data-target=".navbar-primary-collapse">
@@ -84,7 +84,6 @@
   <div id="content" class="row row-with-vspace site-content">
 
     <!-- Function for BANER -->
-    <hr/>
     <div class="row banner-row">
       <?php
       abills_gallery();

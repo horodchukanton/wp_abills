@@ -13,8 +13,8 @@
 .phones_widget .btn {
     height: 100%;
     width: 100%;
-    max-height: 70px;
-    min-height: 70px;
+    max-height: 84px;
+    min-height: 84px;
 }
 
 .phones_widget a {
@@ -30,9 +30,6 @@
     font-size: 130%;
 }
 
-#abills-contacts_row {
-    margin-top: 30px;
-}
 
 /**
 * Custom classes
@@ -44,6 +41,10 @@
 
 .panel-info-card {
     min-height: 117px;
+}
+
+#abills-contacts_row {
+    margin-top: 6px;
 }
 
 /* Hides input type number spinner */
@@ -104,9 +105,24 @@ div.banner-row {
 }
 
 .header-button:hover .header-button-title {
-    margin-top: 0;
+    margin-top: -2em;
 }
 
 div.header-button-text {
-    margin-top : 1em;
+    font: normal normal 600 1em/4em Arial, sans-serif;
+    margin-top: 2em;
+}
+
+.Abills_button_widget_wrapper {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+div.phones_widget_wrapper {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+div.page-header-top-right > .row > div {
+  margin-top : 6px;
 }

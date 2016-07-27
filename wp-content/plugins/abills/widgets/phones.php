@@ -40,7 +40,7 @@ class Phones_Widget extends WP_Widget {
     $before_widget;
     $after_widget;
 
-    echo "<div class='col-md-4 col-xs-12'>" . $before_widget . "<div class='header-phones'><a href='#' class='btn btn-info btn-flat'>";
+    echo "<div class='col-md-4 col-xs-12 phones_widget_wrapper'>" . $before_widget . "<div class='header-phones'><a href='#' class='btn btn-info btn-flat'>";
     if ($phone_one) {
       echo "<h5><span class='glyphicon glyphicon-earphone'></span>" . $phone_one . "</h5>";
     }

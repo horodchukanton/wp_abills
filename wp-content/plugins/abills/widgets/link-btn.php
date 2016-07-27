@@ -52,7 +52,7 @@ class Link_button_widget extends WP_Widget {
     }
 
     if ($link) {
-      echo "<div class='col-md-$col_md_size col-xs-$col_xs_size'>";
+      echo "<div class='col-md-$col_md_size col-xs-$col_xs_size Abills_button_widget_wrapper'>";
       echo $before_widget;
 
 //      $before_button = "<div class='header-button '>";

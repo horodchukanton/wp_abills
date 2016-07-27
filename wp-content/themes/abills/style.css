@@ -8,12 +8,13 @@ Template:       bootstrap-basic
 Version:        0.1.0
 */
 
-
 div.container.page-container {
     padding-top: 60px;
 }
 
-.navbar.navbar-fixed-top {
-    padding-left : 100px;
-    padding-right : 100px;
+@media (min-width: 992px) {
+    .navbar.navbar-fixed-top {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 }

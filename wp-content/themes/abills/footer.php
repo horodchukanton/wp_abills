@@ -7,7 +7,7 @@
 ?>
 
 			</div><!--.site-content-->
-			
+
 			
 			<footer id="site-footer" role="contentinfo">
 				<div id="footer-row" class="row site-footer">
@@ -20,9 +20,7 @@
 						} 
 						?> 
 					</div>
-					<div class="col-md-6 footer-right text-right">
-						<?php dynamic_sidebar('footer-right'); ?>
-					</div>
+					<div class="col-md-6 footer-right text-right"><?php dynamic_sidebar('footer-right'); ?></div>
 				</div>
 			</footer>
 		</div><!--.container page-container-->

@@ -114,6 +114,24 @@ function abills_gallery() {
 }
 
 /**
+*
+*/
+function curl_to_msgs($url, $params) {
+  $curl = curl_init();
+  curl_setopt($curl,CURLOPT_URL, "$url");
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER,true);
+        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER , 0);
+        curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+        curl_setopt($curl, CURLOPT_POST, true);
+        curl_setopt($curl, CURLOPT_POSTFIELDS, "$params");
+        $out = curl_exec($curl);
+        curl_close($curl);
+        $result = new SimpleXMLElement($out);
+        $answer = $result[0];
+        return $answer;
+}
+
+/**
  *  Check if custom theme should be loaded and load it
  */
 function abills_load_custom_theme() {

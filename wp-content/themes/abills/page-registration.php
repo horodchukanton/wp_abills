@@ -18,46 +18,47 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 
     <?php
 
+
      $street = $_POST['STREET'];
      $build  = $_POST['BUILD'];
      $date   = $_POST['DATE'];
      $time   = $_POST['TIME'];
-
-     print "$street, $build, $date $time";
+     
     ?>
-
+    <form method='POST' action='/abills/request_call.php'>
     <div class='panel panel-primary form-horizontal'>
       <div class='panel-heading'>Зявка на регистрацию</div>
       <div class='panel-body'>
         <div class='form-group'>
           <label class='col-md-3 control-label'>ФИО</label>
           <div class='col-md-9'>
-            <input type='text' name='FIO' class='form-control'>
+            <input type='text' name='FIO' class='form-control' required>
           </div>
         </div>
         <div class='form-group'>
           <label class='col-md-3 control-label'>Телефон</label>
           <div class='col-md-9'>
-            <input type='text' name='PHONE' class='form-control'>
+            <input type='text' name='PHONE' class='form-control' required>
           </div>
         </div>
         <div class='form-group'>
           <label class='col-md-3 control-label'>Адрес</label>
           <div class='col-md-9'>
-            <input type='text' name='ADDRESS' value='<?php  print "$street, $build" ?>' class='form-control'>
+            <input type='text' name='ADDRESS' value='<?php  print "$street, $build" ?>' class='form-control' readonly >
           </div>
         </div>
         <div class='form-group'>
           <label class='col-md-3 control-label'>Ожидаемая дата и время</label>
           <div class='col-md-9'>
-            <input type='text' name='DATE' value='<?php  print "$date $time" ?>' class='form-control'>
+            <input type='text' name='DATE' value='<?php  print "$date $time" ?>' class='form-control' readonly>
           </div>
         </div>
       </div>
       <div class='panel-footer'>
-
+        <input type='submit' class='btn btn-success form-control' name='confirm' value='Отправить заявку'> 
       </div>
     </div>
+    </form>
   </main>
 </div>
 

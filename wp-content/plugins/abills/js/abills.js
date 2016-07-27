@@ -80,8 +80,15 @@ $(function () {
         var $this = jQuery(this);
         $this.closest('.card-reveal').slideToggle('slow');
     });
-});
 
-$(function () {
-  $('[data-toggle="popover"]').popover()
+
+    //Init popovers
+    $('[data-toggle="popover"]').popover();
+
+    //If adminrow showed need to add additional padding to top
+    if ($('#wpadminbar').length > 0){
+        var height = $('#wpadminbar').css('height');
+        // $('body').css({'padding-top' : height});
+        $('.navbar.navbar-fixed-top').css({top : height});
+    }
 });

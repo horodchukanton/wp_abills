@@ -27,7 +27,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
     ?>
     <form method='POST' action='/abills/request_call.php'>
     <div class='panel panel-primary form-horizontal'>
-      <div class='panel-heading'>Зявка на регистрацию</div>
+      <div class='panel-heading'>Зявка на подключение</div>
       <div class='panel-body'>
         <div class='form-group'>
           <label class='col-md-3 control-label'>ФИО</label>
@@ -48,7 +48,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
           </div>
         </div>
         <div class='form-group'>
-          <label class='col-md-3 control-label'>Ожидаемая дата и время</label>
+          <label class='col-md-3 control-label' data-toggle='popover' data-content='Удобная для Вас дата и время проведения работ' data-trigger='hover' data-placement='top'>Дата и время</label>
           <div class='col-md-9'>
             <input type='text' name='DATE' value='<?php  print "$date $time" ?>' class='form-control' readonly>
           </div>

@@ -39,26 +39,26 @@ class Abills_registration_widget extends WP_Widget
       echo $before_widget;
       echo "<form method='POST' action='/registration'>
       <div class='panel panel-info'>
-            <div class='panel-heading text-center'>Заявка на регистрацию</div>
+            <div class='panel-heading text-center'>Заявка на подключение</div>
             <div class='panel-body'>
               <div class='form-group'>
-                <label class='col-md-12'>Улица</label>
-                <input type='text' class='form-control' name='STREET' placeholder='Пушкина'>
+                <label class='col-md-12 '>Улица</label>
+                <input type='text' class='form-control' name='STREET' placeholder='Пушкина' required>
               </div>
               <div class='form-group'>
-                <label class='col-md-12'>Дом/квартира</label>
-                <input type='text' class='form-control' name='BUILD' placeholder='18/2'>
+                <label class='col-md-12 '>Дом/квартира</label>
+                <input type='text' class='form-control' name='BUILD' placeholder='18/2' required>
               </div>
               <div class='form-group'>
-                <label class='col-md-12'>Желаемая дата </label>
-                <input type='date' class='form-control' name='DATE'>
+                <label class='col-md-12' data-toggle='popover' data-content='Удобная Вам дата для проведения работ' data-trigger='hover' data-placement='top'>Дата</label>
+                <input type='date' class='form-control' name='DATE' required>
               </div>
               <div class='form-group'>
-                <label class='col-md-12'>Желаемое время </label>
-                <input type='time' class='form-control' name='TIME'>
+                <label class='col-md-12' data-toggle='popover' data-content='Удобное Вам время для проведения работ' data-trigger='hover' data-placement='top'>Время</label>
+                <input type='time' class='form-control' name='TIME' required>
               </div>
             </div>
-            <div class='panel-footer text-center'>
+            <div class='panel-footer '>
             <input type='submit' class='btn btn-primary form-control' value='Создать заявку'>
             </div>
             </div>

@@ -58,6 +58,11 @@ function abills_gallery() {
   if(empty($abills_slideshow_on)){
     return 1;
   }
+
+  if(strcasecmp($abills_gallery_images, '[]') == 0){
+    return 1;
+  }
+
   $dir_name = "/images/wordpress/";
   $images_links = $abills_billing_url . $dir_name;
 

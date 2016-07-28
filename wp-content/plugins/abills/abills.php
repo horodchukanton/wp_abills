@@ -85,10 +85,15 @@ function abills_gallery() {
       if ($elements_count == 1) {
         $active = 'active';
       }
+
+      $button = '';
+      if(strcasecmp($link, '') != 0){
+        $button = "<p><a class='btn btn-primary' href=$link >$describe</a></p>";
+      }
       $li_elements .= "<li data-target='#myCarousel' data-slide-to='$elements_count' class='$active'></li>";
       $items_elements .= "<div class='item $active'><img  src='$images_links$name'>
       <div class='carousel-caption'>
-      <p><a class='btn btn-primary' href=$link >$describe</a></p>
+      $button
       </div>
       </div>";
       $elements_count++;

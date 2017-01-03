@@ -108,6 +108,7 @@ add_action('abills_cards', function ($list_name) {
 
   if (!$list_stringified) {
     echo " [ ABillS Cards ] List $list_name not found \n";
+    return false;
   }
 
   $list = json_decode($list_stringified, true);
